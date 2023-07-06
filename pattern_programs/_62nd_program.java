@@ -1,0 +1,34 @@
+package pattern_programs;
+/*
+ 	1
+   12
+  123
+ 1234
+12345
+
+*/
+import java.util.Scanner;
+
+public class _62nd_program {
+
+	public static void main(String[] args) 
+	{
+		int i,j,n,k;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Value of n");
+		n=sc.nextInt();
+		for(i=1;i<=n;i++)
+		{
+			for(k=n;k>i;k--)
+			{
+				System.out.print(" ");
+			}
+			for(j=1;j<=i;j++)
+			{
+				System.out.print(""+j);
+			}
+			System.out.println("");
+		}
+	}
+
+}

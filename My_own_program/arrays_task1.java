@@ -1,0 +1,44 @@
+package My_own_program;
+
+import java.util.Scanner;
+class arrays_task1
+{
+	public static void main(String args[])
+	{
+		Scanner sc = new Scanner(System.in);
+		int n,i=0;
+		int count=0;
+		
+		System.out.println("Enter How Many Numbers You Want in Array: ");
+		n = sc.nextInt();
+		
+		int[] arr = new int[n];
+		System.out.println("Enter "+n+" Elements One by One : ");
+		for(i=0;i<n;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		System.out.println("Your Entered Array is : ");
+		for(i=0;i<n;i++)
+		{
+			System.out.println("\t"+arr[i]);
+		}
+		
+		for(i=0;i<n;i++)
+		{
+			if(arr[i]<10)
+			{
+				count+=1;
+			}
+			else if(arr[i]>9 && arr[i]<100)
+			{
+				count+=2;
+			}
+			else if(arr[i]>100 && arr[i]<1000)
+			{
+				count+=3;
+			}
+		}
+		System.out.println("Total Count of Value : "+count);
+	}
+}
