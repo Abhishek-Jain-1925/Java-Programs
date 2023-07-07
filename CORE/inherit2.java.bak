@@ -1,0 +1,21 @@
+
+abstract class ACTIVE
+{
+	void print1()
+	{
+		System.out.println("Print from Active.");
+	}
+}
+
+class inherit2 extends ACTIVE
+{
+	void print()
+	{
+		System.out.println("Print from inherit2.");
+	}
+	public static void main(String[] asdb)
+	{
+		ACTIVE a = new inherit2();
+		a.print1();
+	}
+}

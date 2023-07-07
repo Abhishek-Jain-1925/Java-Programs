@@ -1,0 +1,28 @@
+class demo
+{
+	int a;
+	demo()
+	{
+		a=0;
+		System.out.println("\n\t I am in Def. con_or");
+	}
+	demo(int a )
+	{
+		this.a=a;
+		System.out.println("\n\t I am in Para. con_or");
+		System.out.println("\n\t A : "+a);
+	}
+	//overridden method from object class i.e.Sabka Malik Ek
+	protected void finalize()
+	{
+		System.out.println("\n\t Object Destroyed !!");
+	}
+}
+
+class finalize_method_demo
+{
+	public static void main(String args[])
+	{
+		
+	}
+}

@@ -1,0 +1,100 @@
+import java.util.Scanner;
+
+class tollPlaza
+{
+	public static void main(String asdb[])
+	{
+		Scanner s = new Scanner(System.in);
+		int ch,ch1,ch2;
+		int lbike=0,lcar=0,lbus=0,ltruck=0;
+		int obike=0,ocar=0,obus=0,otruck=0;
+		double amt=0.0;
+		do{
+		System.out.println("\n\t----------------------------");
+		System.out.println("\n\t WelCome To Baramati Toll Plaza..!");
+		System.out.println("\n\t----------------------------");
+		System.out.println("\n\t 1.for Local Vehicles");
+		System.out.println("\n\t 2.for outside Vehicles");
+		System.out.println("\n\t 3.Display All Audit");
+		System.out.println("\n\t 4.Display Collection");
+		System.out.println("\n\t 5.Exit");
+		System.out.println("\n\t Enter Your Choice : ");
+		ch = s.nextInt();
+		switch(ch)
+		{
+			case 1:
+			{
+			System.out.println("\n\t------------------------");
+			System.out.println("\n\t Local-");
+			System.out.println("\n\t 1.Bike");
+			System.out.println("\n\t 2.Car");
+			System.out.println("\n\t 3.Bus");
+			System.out.println("\n\t 4.Truck");
+			System.out.println("\n\t Enter Vehicle Type No. : ");
+			ch1=s.nextInt();
+			switch(ch1)
+			{
+				case 1: lbike++;	break;
+				case 2: lcar++;		break;
+				case 3: lbus++;		break;
+				case 4: ltruck++;	break;
+				default : System.out.println("\n\t Invalid Option selected From local Vahicles.");
+			}
+			break;
+			}
+			
+			case 2:
+			{
+			System.out.println("\n\t------------------------");
+			System.out.println("\n\t Outside-");
+			System.out.println("\n\t 1.Bike");
+			System.out.println("\n\t 2.Car");
+			System.out.println("\n\t 3.Bus");
+			System.out.println("\n\t 4.Truck");
+			System.out.println("\n\t Enter Vehicle Type No. : ");
+			ch2=s.nextInt();
+			switch(ch2)
+			{
+				case 1: amt+=20;	obike++;	break;
+				case 2: amt+=50;	ocar++;		break;
+				case 3: amt+=70;	obus++;		break;
+				case 4: amt+=100;	otruck++;	break;
+				default : System.out.println("\n\t Invalid Option selected From local Vahicles.");
+			}
+			break;
+			}
+			case 3:
+			{
+				System.out.println("\n\t Daily Audit of All Vehicles Passed from Toll - \n");
+				System.out.println("\n\t 1.Local Vehicles - \n");
+				System.out.println("\n\t Bikes : "+lbike);
+				System.out.println("\n\t Cars : "+lcar);
+				System.out.println("\n\t Bus : "+lbus);
+				System.out.println("\n\t Truck : "+ltruck+"\n");
+				System.out.println("\n\t 2.OutSide Vahicles - \n");
+				System.out.println("\n\t Bikes : "+obike);
+				System.out.println("\n\t Cars : "+ocar);
+				System.out.println("\n\t Bus : "+obus);
+				System.out.println("\n\t Truck : "+otruck+"\n");
+				break;
+			}
+			case 4:
+			{
+				System.out.println("\n\t Total Collection = "+amt);
+				System.out.println("\n\t Thank You....!");
+				break;
+			}
+			case 5:
+			{
+				System.exit(0);
+				break;
+			}
+			default:
+			{
+				System.out.println("\n\t Invalid Selection,Plz Select Appropriate Option.");
+			}
+		}
+	
+	}while(ch!=4);
+}
+}

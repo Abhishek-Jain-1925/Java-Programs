@@ -1,0 +1,8 @@
+class garbageCollectorDemo
+{
+	public static void main(String args[])
+	{
+		long a,b;
+		Runtime rt = Runtime.getRuntime();
+	}
+}

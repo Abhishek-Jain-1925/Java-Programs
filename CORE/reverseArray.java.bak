@@ -1,0 +1,31 @@
+import java.util.*;
+class reverseArray
+{
+	public static void main(String[] asdb)
+	{
+		int n;
+		Scanner s;
+		s = new Scanner(System.in);
+		
+		System.out.println("\n\t Enter How Many elements you want : ");
+		n = s.nextInt();
+		
+		int arr = new int[n];
+		
+		System.out.println("\n\t Enter "+n+" elements one by one : ");
+		for(int i=0;i<n;i++)
+		{
+			arr[i]= s.nextInt();
+		}
+		System.out.println("\n\t Your Entered Array is = \n");
+		for(int i=0;i<n;i++)
+		{
+			System.out.println(arr[i]);
+		}
+		System.out.println("\n\t Reversed Array is = \n");
+		for(int i=(arr.length-1);i>=0;i--)
+		{
+			System.out.println(arr[i]);
+		}
+	}
+}

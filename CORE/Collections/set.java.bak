@@ -1,0 +1,9 @@
+import java.util.*;
+
+class set
+{
+	public static void main(String asdb[])
+	{
+		Set<String> s = new HashSet<String>();
+	}
+}

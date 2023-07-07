@@ -1,0 +1,13 @@
+import java.util.*;
+
+class map
+{
+	public static void main(String asdb[])
+	{
+		Map<Integer,String> map = new HashMap<Integer,String>();
+		s.put(1,"Johny");
+		s.put(2,"Johny");
+		s.put(3,"Yes Papa");
+		System.out.println(s);
+	}
+}

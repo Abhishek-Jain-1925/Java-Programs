@@ -1,0 +1,22 @@
+
+class finally1
+{
+	public static void main(String args[])
+	{
+		int a=0,b=0,c=0;
+		java.util.Scanner sc = new java.util.Scanner(System.in);
+		
+		try{
+		System.out.println("\n\t Enter 1st Number : ");
+		a=sc.nextInt();
+		System.out.println("\n\t Enter 2nd Number : ");
+		b=sc.nextInt();
+		c=a/b;
+		System.out.println("\n\t Result : "+c);
+		}
+		finally
+		{
+			System.out.println("\n\t Thank You...!! ");
+		}
+	}
+}
